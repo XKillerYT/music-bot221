@@ -1,12 +1,12 @@
-const Discord = require('discord.js');
+const Discord = require('discord.js');///////////! , X_KillérYT - 💔#2571
 
-const Util = require('discord.js');
+const Util = require('discord.js');///////////! , X_KillérYT - 💔#2571
 
-const getYoutubeID = require('get-youtube-id');
+const getYoutubeID = require('get-youtube-id');///////////! , X_KillérYT - 💔#2571
 
-const fetchVideoInfo = require('youtube-info');
+const fetchVideoInfo = require('youtube-info');///////////! , X_KillérYT - 💔#2571
 
-const YouTube = require('simple-youtube-api');
+const YouTube = require('simple-youtube-api');///////////! , X_KillérYT - 💔#2571
 
 const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
 
@@ -105,11 +105,11 @@ client.on('message', async msg => {
         if (!voiceChannel) return msg.channel.send("I can't find you in any voice channel!");
         
         const permissions = voiceChannel.permissionsFor(msg.client.user);
-        
+        ///////////! , X_KillérYT - 💔#2571
         if (!permissions.has('CONNECT')) {
 
 			return msg.channel.send("I don't have enough permissions to join your voice channel!");
-        }
+        }///////////! , X_KillérYT - 💔#2571
         
 		if (!permissions.has('SPEAK')) {
 
@@ -190,7 +190,7 @@ client.on('message', async msg => {
 	} else if (command === `stop`) {
 
 		if (!msg.member.voiceChannel) return msg.channel.send("You Must be in a Voice channel to Run the Music commands!");
-        if (!serverQueue) return msg.channel.send("There is no Queue to stop!!");
+        if (!serverQueue) return msg.channel.send("There is no Queue to stop!!");///////////! , X_KillérYT - 💔#2571
         
 		serverQueue.songs = [];
 		serverQueue.connection.dispatcher.end('Ok, stopped & disconnected from your Voice channel');
@@ -262,7 +262,7 @@ async function handleVideo(video, msg, voiceChannel, playlist = false) {
 			textChannel: msg.channel,
 			voiceChannel: voiceChannel,
 			connection: null,
-			songs: [],
+			songs: [],///////////! , X_KillérYT - 💔#2571
 			volume: 5,
 			playing: true
 		};
@@ -334,7 +334,7 @@ const devs = ['383606619671494659','383606619671494659'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
-    
+    ///////////! , X_KillérYT - 💔#2571
 if (message.content.startsWith(adminprefix + 'setgame')) {
   client.user.setGame(argresult);
     message.channel.sendMessage(`**${argresult} تم تغيير بلاينق البوت إلى **`)
@@ -348,22 +348,22 @@ return message.reply("**لا يمكنك تغيير الاسم يجب عليك ا
 client.user.setAvatar(argresult);
   message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
       } else     
-if (message.content.startsWith(adminprefix + 'sett')) {
+if (message.content.startsWith(adminprefix + 'sett')) {///////////! , X_KillérYT - 💔#2571
   client.user.setGame(argresult, "https://www.twitch.tv/idk");//حقوق دايموند كودز
     message.channel.sendMessage(`**تم تغيير تويتش البوت إلى  ${argresult}**`)//حقوق دايموند كودز
-}
-});
-
-client.on('ready', () => {
-   console.log(`----------------`);
-      console.log(`Desert Bot- Script By : Diamond Codes`);
-        console.log(`----------------`);
-      console.log(`ON ${client.guilds.size} Servers '     Script By : Diamond Codes ' `);
-    console.log(`----------------`);
-  console.log(`Logged in as ${client.user.tag}!`);
+}///////////! , X_KillérYT - 💔#2571
+});///////////! , X_KillérYT - 💔#2571
+///////////! , X_KillérYT - 💔#2571
+client.on('ready', () => {///////////! , X_KillérYT - 💔#2571
+   console.log(`----------------`);///////////! , X_KillérYT - 💔#2571
+      console.log(`Desert Bot- Script By : Diamond Codes`);///////////! , X_KillérYT - 💔#2571
+        console.log(`----------------`);///////////! , X_KillérYT - 💔#2571
+      console.log(`ON ${client.guilds.size} Servers '     Script By : Diamond Codes ' `);///////////! , X_KillérYT - 💔#2571
+    console.log(`----------------`);///////////! , X_KillérYT - 💔#2571
+  console.log(`Logged in as ${client.user.tag}!`);///////////! , X_KillérYT - 💔#2571
 client.user.setGame(`By Mohammed | #help `)//حقوق دايموند كودز
-client.user.setStatus("online")
-});
-
-
-client.login(process.env.BOT_TOKEN);
+client.user.setStatus("online")///////////! , X_KillérYT - 💔#2571
+});///////////! , X_KillérYT - 💔#2571
+///////////! , X_KillérYT - 💔#2571
+///////////! , X_KillérYT - 💔#2571
+client.login(process.env.BOT_TOKEN);///////////! , X_KillérYT - 💔#2571
